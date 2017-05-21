@@ -50,7 +50,6 @@ def openChrome():
     except Exception as e: print(e)
 
 
-
 openVPN()
 time.sleep(30)
 
