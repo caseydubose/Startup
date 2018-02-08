@@ -13,27 +13,15 @@ def closeDropbox():
         
     except Exception as e: print(e)
 
-def openBox():
-    try:
-        os.startfile('C:\Program Files\Box\Box Sync\BoxSync.exe')
-
-    except Exception as e: print(e)
-
-def closeBox():
-    try:
-        os.system('TASKKILL /F /IM BoxSync.exe')
-        
-    except Exception as e: print(e)
-
-def openOutlook():
+def openInbox():
     try:
         os.startfile('OUTLOOK.exe')
 
     except Exception as e: print(e)
 
-def openJabber():
+def openSlack():
     try:
-        os.startfile('C:\Program Files (x86)\Cisco Systems\Cisco Jabber\CiscoJabber.exe')
+        os.startfile('C:\Users\cdubose\AppData\Local\slack\slack.exe')
 
     except Exception as e: print(e)
    
@@ -50,26 +38,23 @@ def openChrome():
     except Exception as e: print(e)
 
 
-openVPN()
-time.sleep(30)
+# openVPN()
+# time.sleep(30)
 
-openOutlook()
-time.sleep(5)
+# openOutlook()
+# time.sleep(5)
 
 openChrome()
 time.sleep(3)
 
 openDropbox()
-openBox()
 time.sleep(5)
 
-openJabber()
+openSlack()
 time.sleep(180)
 
 closeDropbox()
 time.sleep(2)
-
-closeBox()
 
 exit()
 
