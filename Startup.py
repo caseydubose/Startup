@@ -21,7 +21,7 @@ def openInbox():
 
 def openSlack():
     try:
-        os.startfile('C:\Users\cdubose\AppData\Local\slack\slack.exe')
+        os.startfile('C:\\Users\cdubose\AppData\Local\slack\slack.exe')
 
     except Exception as e: print(e)
    
@@ -37,21 +37,28 @@ def openChrome():
 
     except Exception as e: print(e)
 
+def openDrive():
+        try:
+            os.startfile("C:\Program Files\Google\Drive File Stream\\25.157.185.3\GoogleDriveFS.exe")
 
-# openVPN()
-# time.sleep(30)
+        except Exception as e:
+            print(e)
 
-# openOutlook()
-# time.sleep(5)
+
+openOutlook()
+time.sleep(5)
 
 openChrome()
 time.sleep(3)
 
-openDropbox()
-time.sleep(5)
+openDrive()
+time.sleep(30)
 
 openSlack()
-time.sleep(180)
+time.sleep(15)
+
+openDropbox()
+time.sleep(300)
 
 closeDropbox()
 time.sleep(2)
